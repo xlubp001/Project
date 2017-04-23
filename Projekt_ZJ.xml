@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<aplikace>
+ <nazev>ČZUapp</nazev>
+   <zakladni_konfigurace set="on">
+      <format>CSS</format>
+      <procesor>"4"</procesor>
+      <ram>"2048"</ram>
+		  <pamet>"1024"</pamet>
+		  <vezre>1.0</vezre>
+		  <internet>Ano</internet>
+		  
+	   <prostredi vzhled="Basic">
+       <tema>Zakladni</tema>
+       <pozadi>Zelena</pozadi>
+       <ikona>"Ikona.png"</ikona>
+       <nadpis>ČZUapp</nadpis>
+       <obrazek>"Obrazek.jpg"</obrazek>
+       <velikost_obrazovky>800x600</velikost_obrazovky>
+       <sirka>100%</sirka>
+       <vyska>100%</vyska>
+       <disclaimer>Text disclaimeru</disclaimer>
+       <uvodni_text>Vítejte</uvodni_text>
+       <tlacitko_souhlasim>
+        <sirka>80</sirka>
+        <vyska>35</vyska>
+        <text_tlacitka>Souhlasim</text_tlacitka>
+       </tlacitko_souhlasim>
+       <checkbox_souhlasim>
+        <viditelnost>Ano</viditelnost>
+        <checked>Ne</checked>
+       </checkbox_souhlasim>
+     </prostredi>
+     
+     <uzivatelske_prostredi mode="automatic">
+       <tema>Zakladni</tema>
+       <pozadi>Zelena</pozadi>
+       <ikona>"Ikona.png"</ikona>
+       <nadpis>ČZUapp</nadpis>
+       <obrazek>"Obrazek.jpg"</obrazek>
+       <velikost_obrazovky>800x600</velikost_obrazovky>
+       <sirka>100%</sirka>
+       <vyska>100%</vyska>
+       
+       <hlavni_nadpis format="main">
+         <pismo>Arial</pismo>
+         <velikost_pisma>22</velikost_pisma>
+         <poloha>Uprostred</poloha>
+       </hlavni_nadpis>
+       
+       <nadpis format="simple">
+         <pismo>Arial</pismo>
+         <velikost_pisma>14</velikost_pisma>
+         <poloha>Uprostred</poloha>       
+       </nadpis>
+       
+       <jmeno_textbox>
+         <sirka>140</sirka>       
+         <vyska>40</vyska>
+         <max_delka>60</max_delka>
+         <text_textboxu>"Zadej jmeno"</text_textboxu>
+       </jmeno_textbox>
+      
+      <heslo_textbox bezpecnost="secure">
+        <sirka>140</sirka>
+        <vyska>40</vyska>
+        <max_delka>30</max_delka>
+        <text_textboxu>"Zadej heslo"</text_textboxu>
+      </heslo_textbox>
+      
+      <tlacitko_login>
+        <sirka>80</sirka>
+        <vyska>35</vyska>
+        <text_tlacitka>"Prihlasit"</text_tlacitka>
+      </tlacitko_login>
+      
+      <tlacitko_zpet>
+        <sirka>80</sirka>
+        <vyska>35</vyska>
+        <text_tlacitka>"Zpet"</text_tlacitka>
+      </tlacitko_zpet>
+     </uzivatelske_prostredi>
+     
+     <uzivatel id="xlubp001">
+      <jmeno>Petr</jmeno>
+      <prijmeni>Lubina</prijmeni>
+      <heslo>1234567</heslo>
+      <nastaveni>Zakladni</nastaveni>
+      <adresa>
+       <ulice>Dlouhá</ulice>
+       <CP>122</CP>
+       <mesto>Praha</mesto>
+       <PSC>10001</PSC>    
+      </adresa>
+     </uzivatel>
+   </zakladni_konfigurace>
+</aplikace>

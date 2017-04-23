@@ -1,0 +1,95 @@
+{
+   "nazev": "ÈZUapp",
+   "zakladni_konfigurace": {
+      "@set": "on",
+      "format": "CSS",
+      "procesor": "\"4\"",
+      "ram": "\"2048\"",
+      "pamet": "\"1024\"",
+      "vezre": "1.0",
+      "internet": "Ano",
+      "prostredi": {
+         "@vzhled": "Basic",
+         "tema": "Zakladni",
+         "pozadi": "Zelena",
+         "ikona": "\"Ikona.png\"",
+         "nadpis": "ÈZUapp",
+         "obrazek": "\"Obrazek.jpg\"",
+         "velikost_obrazovky": "800x600",
+         "sirka": "100%",
+         "vyska": "100%",
+         "disclaimer": "Text disclaimeru",
+         "uvodni_text": "Vítejte",
+         "tlacitko_souhlasim": {
+            "sirka": "80",
+            "vyska": "35",
+            "text_tlacitka": "Souhlasim"
+         },
+         "checkbox_souhlasim": {
+            "viditelnost": "Ano",
+            "checked": "Ne"
+         }
+      },
+      "uzivatelske_prostredi": {
+         "@mode": "automatic",
+         "tema": "Zakladni",
+         "pozadi": "Zelena",
+         "ikona": "\"Ikona.png\"",
+         "nadpis": [
+            "ÈZUapp",
+            {
+               "@format": "simple",
+               "pismo": "Arial",
+               "velikost_pisma": "14",
+               "poloha": "Uprostred"
+            }
+         ],
+         "obrazek": "\"Obrazek.jpg\"",
+         "velikost_obrazovky": "800x600",
+         "sirka": "100%",
+         "vyska": "100%",
+         "hlavni_nadpis": {
+            "@format": "main",
+            "pismo": "Arial",
+            "velikost_pisma": "22",
+            "poloha": "Uprostred"
+         },
+         "jmeno_textbox": {
+            "sirka": "140",
+            "vyska": "40",
+            "max_delka": "60",
+            "text_textboxu": "\"Zadej jmeno\""
+         },
+         "heslo_textbox": {
+            "@bezpecnost": "secure",
+            "sirka": "140",
+            "vyska": "40",
+            "max_delka": "30",
+            "text_textboxu": "\"Zadej heslo\""
+         },
+         "tlacitko_login": {
+            "sirka": "80",
+            "vyska": "35",
+            "text_tlacitka": "\"Prihlasit\""
+         },
+         "tlacitko_zpet": {
+            "sirka": "80",
+            "vyska": "35",
+            "text_tlacitka": "\"Zpet\""
+         }
+      },
+      "uzivatel": {
+         "@id": "xlubp001",
+         "jmeno": "Petr",
+         "prijmeni": "Lubina",
+         "heslo": "1234567",
+         "nastaveni": "Zakladni",
+         "adresa": {
+            "ulice": "Dlouhá",
+            "CP": "122",
+            "mesto": "Praha",
+            "PSC": "10001"
+         }
+      }
+   }
+}

@@ -1,0 +1,264 @@
+<html>
+<meta charset="UTF-8">
+<head>
+	<style>
+		h1 {color:green;}
+		body {background: khaki}
+	</style>	
+	<title> ÈZU App </title>
+</head>
+<body>
+	<header>
+		<h1 id="nazev" align="center"><big><u>Dokumentace v HTML</u></big></h1>
+		<h1 align="center"><big><u>ÈZU App</u></big></h1>
+		<nav>
+			<ol>
+				<li><a href="#nazev"> Název </a></li>
+				<li><a href="#uvod"> Úvod </a></li>
+				<li><a href="#metodika"> Metodika </a></li>
+				<li><a href="#element"> Popis elementù a atributù </a></li>
+				<li><a href="#transformace"> Popis transformace </a></li>
+				<li><a href="#zaver"> Závìr </a></li>
+				<li><a href="#paticka"> Patièka </a></li>
+			</ol>
+		</nav>	
+	</header>
+	<section>
+		<article> 
+			<h1 align="left" id="uvod">
+				Úvod
+			</h1>
+				<p>
+					Tento projekt je vytvoøenı na základì fiktivní aplikace ÈZU App, školní aplikace pro studetny. Tento projekt ilustruje základní konfiguraci "vstupní brány" do této aplikace. Mezi jednotlivımi prvky tak lze nalézt napøíklad prostøedí aplikace pøi pøihlašování uivatele. 
+				</p>
+		</article>
+	</section>
+	<section>
+		<article>
+			<h1 align="left" id="metodika">
+				Metodika
+			</h1>
+				<p>
+					Po vytvoøení návrhu na tento projekt byl vytvoøen základní XML soubor s jednotlivımi elementy a atributy. Poté bylo zapotøebí vytvoøit XSD soubor, neboli XML Schema. Následnì je tøeba vytvoøit XSLT soubor pro moné transformace. Na konci je chodné napsat dokumentaci ve formì HTML.
+				</p>
+		</article>
+	</section>			
+	<section> 
+		<article>
+			<h1 align="left" id="element">
+				Popis elementù a atributù
+			</h1>
+				<p align="left">Seznam a popis pouitıch elementù. Viz tabulka --></p>
+
+				<table align="center" border="3">
+						<tr>
+							<td><strong>Název elementu</strong></td>
+							<td><strong>Popis elementu</strong></td>
+						</tr>
+						<tr>
+							<td>aplikace</td>
+							<td>obsahuje jména uivatelù aplikace</td>
+						</tr>	
+						<tr>
+							<td>nazev</td>
+							<td>název aplikace</td>
+						</tr>
+						<tr>
+							<td>format</td>
+							<td>formát jazyka</td>
+						</tr>
+						<tr>
+							<td>procesor</td>
+							<td>poadavek na procesor</td>
+						</tr>
+						<tr>
+							<td>ram</td>
+							<td>poadavek na ram</td>
+						</tr>
+						<tr>
+							<td>pamet</td>
+							<td>poadavek na pamì</td>
+						</tr>
+						<tr>
+							<td>verze</td>
+							<td>èíslo verze</td>
+						</tr>
+						<tr>
+							<td>internet</td>
+							<td>poadavek na pøipojení</td>
+						</tr>
+						<tr>
+							<td>tema</td>
+							<td>tématika stránky</td>
+						</tr>
+						<tr>
+							<td>pozadi</td>
+							<td>pozadí stránky</td>
+						</tr>
+						<tr>
+							<td>ikona</td>
+							<td>obrázek inkony</td>
+						</tr>
+						<tr>
+							<td>obrazek</td>
+							<td>obrázek na stránce</td>
+						</tr>
+						<tr>
+							<td>velikost obrazovky</td>
+							<td>nastavení velikosti obrazovky</td>
+						</tr>
+						<tr>
+							<td>sirka</td>
+							<td>nastavení šíøky obrazovky</td>
+						</tr>
+						<tr>
+							<td>vyska</td>
+							<td>nastavení vıšky obrazovky</td>
+						</tr>
+						<tr>
+							<td>disclaimer</td>
+							<td>disclaimer na stránce</td>
+						</tr>
+						<tr>
+							<td>uvodni_text</td>
+							<td>text úvodního textu</td>
+						</tr>
+						<tr>
+							<td>tlacitko_souhlasim</td>
+							<td>tlaèítko, zda uivatel souhlasí</td>
+						</tr>
+						<tr>
+							<td>text_tlacitka</td>
+							<td>text napsanı na tlaèítku</td>
+						</tr>
+						<tr>
+							<td>checkbox_souhlasim</td>
+							<td>checkbox, pokud uivatel souhlasí</td>
+						</tr>
+						<tr>
+							<td>viditelnost</td>
+							<td>checkbox je viditelnı pro uivatele</td>
+						</tr><tr>
+							<td>checked</td>
+							<td>kontroluje zaškrtnutí checkboxu</td>
+						</tr><tr>
+							<td>pismo</td>
+							<td>nastavení stylu písma</td>
+						</tr>
+						<tr>
+							<td>velikost_pisma</td>
+							<td>nastavení velikosti písma</td>
+						</tr>
+						<tr>
+							<td>poloha</td>
+							<td>umístìní nadpisu na stránce</td>
+						</tr>
+						<tr>
+							<td>max_delka</td>
+							<td>maximální poèet znakù v textboxu</td>
+						</tr>
+						<tr>
+							<td>te_textboxu</td>
+							<td>text zobrazenı v textboxu</td>
+						</tr>
+						<<tr>
+							<td>jmeno</td>
+							<td>jméno uivatele</td>
+						
+						</tr>
+						<tr>
+							<td>prijmeni</td>
+							<td>pøíjmení uivatele</td>
+						</tr>
+						<tr>
+							<td>heslo</td>
+							<td>heslo uivatele</td>
+						</tr>
+						<tr>
+							<td>nastaveni</td>
+							<td>nastavení zvolené uivatelem</td>
+						</tr>
+						<tr>
+							<td>adresa</td>
+							<td>adresa uivatele</td>
+						</tr>
+						<tr>
+							<td>ulice</td>
+							<td>název ulice</td>
+						</tr>
+						<tr>
+							<td>CP</td>
+							<td>èíslo popisné</td>
+						</tr>
+						<tr>
+							<td>mesto</td>
+							<td>mìsto, kte uivatel bydlí</td>
+						</tr>
+						<tr>
+							<td>PSC</td>
+							<td>poštovní smìrovací èíslo mìsta uivatele</td>
+						</tr>
+						<tr>
+							<td><strong>Název atributu</strong></td>
+							<td><strong>Popis atributu</strong></td>
+						</tr>
+						<tr>
+							<td>zakladni_konfigurace</td>
+							<td>pøedem daná základní konfigurace</td>
+						</tr>
+						<tr>
+							<td>prostredi</td>
+							<td>nastavení prostøedí, které uivatel uvidí</td>
+						</tr>
+						<tr>
+							<td>uzivatelske_prostredi</td>
+							<td>uivatelem pøizpùsobitelné prostøedí</td>
+						</tr>
+						<tr>
+							<td>hlavni_nadpis</td>
+							<td>formát hlavního naspisu</td>
+						</tr>
+						<tr>
+							<td>nadpis</td>
+							<td>formát podnadpisu</td>
+						</tr>
+						<tr>
+							<td>heslo_textbox</td>
+							<td>bezpeènost zadávaného hesla</td>
+						</tr>
+						<tr>
+							<td>uzivatel</td>
+							<td>identifikaèní údaj uivatele</td>
+						</tr>
+				</table>
+		</article>	
+	</section>	
+	<section> 
+		<article>
+			<h1 align="left" id="transformace">
+				Transformace
+			</h1>
+				<p>
+				Transformace probìhla ze souboru XML na soubor XSL. Další transformací bylo pøevedení souboru XML na JSON, ten se pouívá pro vımìnu a ukládání dat. Funguje mezi mobilní aplikací a serverem.
+				</p>
+		</article>		
+	</section>
+	<section>
+		<article>
+			<h1 align="left" id="zaver">
+				Závìr
+			</h1>
+				<p>
+				Práce probìhla v poøádku, všechny souèásti projektu jsou validní a well-formed. Díky tomuto projektu jsem mìl monost nahlédnout do problematiky XML èi HTML, nebo celkovì do problematiky znaèkovacích jazykù. Zdroje informací jsou <a href="https://www.w3schools.com">w3schools</a>, nebo napøíklad <a href="https://stackoverflow.com">Stack overflow</a>. Celı projekt a pøíbuzné soubory naleznete na <a href="https://github.com/xlubp001">GitHubu</a>.
+		</article>		
+	</section>
+	<footer>
+		<p> </p>
+		<article>
+			<p> Petr Lubina </p>
+			<p> SYI</p>
+			<p> 22.4.2016 </p>
+		</article>
+	</footer>
+</body>
+</html>

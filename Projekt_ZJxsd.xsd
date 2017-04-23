@@ -1,0 +1,141 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="aplikace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="nazev"/>
+        <xs:element name="zakladni_konfigurace">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="format"/>
+              <xs:element type="xs:string" name="procesor"/>
+              <xs:element type="xs:string" name="ram"/>
+              <xs:element type="xs:string" name="pamet"/>
+              <xs:element type="xs:float" name="vezre"/>
+              <xs:element type="xs:string" name="internet"/>
+              <xs:element name="prostredi">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="tema"/>
+                    <xs:element type="xs:string" name="pozadi"/>
+                    <xs:element type="xs:string" name="ikona"/>
+                    <xs:element type="xs:string" name="nadpis"/>
+                    <xs:element type="xs:string" name="obrazek"/>
+                    <xs:element type="xs:string" name="velikost_obrazovky"/>
+                    <xs:element type="xs:string" name="sirka"/>
+                    <xs:element type="xs:string" name="vyska"/>
+                    <xs:element type="xs:string" name="disclaimer"/>
+                    <xs:element type="xs:string" name="uvodni_text"/>
+                    <xs:element name="tlacitko_souhlasim">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="sirka"/>
+                          <xs:element type="xs:byte" name="vyska"/>
+                          <xs:element type="xs:string" name="text_tlacitka"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="checkbox_souhlasim">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="viditelnost"/>
+                          <xs:element type="xs:string" name="checked"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="vzhled"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="uzivatelske_prostredi">
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element type="xs:string" name="tema"/>
+                    <xs:element type="xs:string" name="pozadi"/>
+                    <xs:element type="xs:string" name="ikona"/>
+                    <xs:element type="xs:string" name="nadpis"/>
+                    <xs:element type="xs:string" name="obrazek"/>
+                    <xs:element type="xs:string" name="velikost_obrazovky"/>
+                    <xs:element type="xs:string" name="sirka"/>
+                    <xs:element type="xs:string" name="vyska"/>
+                    <xs:element name="hlavni_nadpis">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="pismo"/>
+                          <xs:element type="xs:byte" name="velikost_pisma"/>
+                          <xs:element type="xs:string" name="poloha"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="format" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="jmeno_textbox">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:short" name="sirka"/>
+                          <xs:element type="xs:byte" name="vyska"/>
+                          <xs:element type="xs:byte" name="max_delka"/>
+                          <xs:element type="xs:string" name="text_textboxu"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="heslo_textbox">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:short" name="sirka"/>
+                          <xs:element type="xs:byte" name="vyska"/>
+                          <xs:element type="xs:byte" name="max_delka"/>
+                          <xs:element type="xs:string" name="text_textboxu"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="bezpecnost"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="tlacitko_login">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="sirka"/>
+                          <xs:element type="xs:byte" name="vyska"/>
+                          <xs:element type="xs:string" name="text_tlacitka"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="tlacitko_zpet">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="sirka"/>
+                          <xs:element type="xs:byte" name="vyska"/>
+                          <xs:element type="xs:string" name="text_tlacitka"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                  <xs:attribute type="xs:string" name="mode"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="uzivatel">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="jmeno"/>
+                    <xs:element type="xs:string" name="prijmeni"/>
+                    <xs:element type="xs:int" name="heslo"/>
+                    <xs:element type="xs:string" name="nastaveni"/>
+                    <xs:element name="adresa">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="ulice"/>
+                          <xs:element type="xs:byte" name="CP"/>
+                          <xs:element type="xs:string" name="mesto"/>
+                          <xs:element type="xs:short" name="PSC"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="set"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
